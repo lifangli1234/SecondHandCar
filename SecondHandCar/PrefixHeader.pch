@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  SecondHandCar
+//
+//  Created by lifangli on 15/8/24.
+//  Copyright (c) 2015年 lifangli. All rights reserved.
+//
+
+#ifndef SecondHandCar_PrefixHeader_pch
+#define SecondHandCar_PrefixHeader_pch
+
+
+
+#endif
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Helper.h"
+#import "CONST.h"
+#endif
