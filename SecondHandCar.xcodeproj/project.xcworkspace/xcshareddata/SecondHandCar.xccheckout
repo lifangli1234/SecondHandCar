@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>02FA4772-7A5C-4D03-B4A9-194833BAE1C1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SecondHandCar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B244F72329BC075380CB2362FAC8A1E86D982E61</key>
+		<string>https://github.com/lifangli1234/SecondHandCar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SecondHandCar.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B244F72329BC075380CB2362FAC8A1E86D982E61</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lifangli1234/SecondHandCar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B244F72329BC075380CB2362FAC8A1E86D982E61</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B244F72329BC075380CB2362FAC8A1E86D982E61</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E4%BA%8C%E6%89%8B%E8%BD%A6</string>
+		</dict>
+	</array>
+</dict>
+</plist>

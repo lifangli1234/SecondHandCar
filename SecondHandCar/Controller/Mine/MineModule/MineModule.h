@@ -13,5 +13,6 @@
 +(MineModule *)sharedMineModule;
 
 -(void)initMyInfoListWithArr:(NSMutableArray *)arr;
+-(void)initCarStateWithArr:(NSMutableArray *)arr;
 
 @end

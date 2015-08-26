@@ -10,6 +10,8 @@
 #import "MineModule.h"
 #import "MyInfoCell.h"
 #import "LoginViewController.h"
+#import "DiscorverCarViewController.h"
+#import "CarStateViewController.h"
 
 @interface MineViewController ()
 
@@ -100,7 +102,8 @@
     [mySaleCarView addSubview:[Helper view:CGRectMake(0, 43.5, [Helper screenWidth], 0.5) backgroundColor:LINECOLOR]];
     CGFloat y = 44.0;
     NSInteger index = 0;
-    NSMutableArray *nameArr = [[NSMutableArray alloc] initWithObjects:@"在售车",@"未通过",@"已售车",@"未填写",@"审核中",@"已过期", nil];
+    NSMutableArray *nameArr = [[NSMutableArray alloc] init];
+    [[MineModule sharedMineModule] initCarStateWithArr:nameArr];
     NSMutableArray *tagArr = [[NSMutableArray alloc] initWithObjects:[NSString stringWithFormat:@"%d",ONSALECAR_TAG],[NSString stringWithFormat:@"%d",NOTPASSCAR_TAG],[NSString stringWithFormat:@"%d",HASSALECAR_TAG],[NSString stringWithFormat:@"%d",NOTWRITECOMPLETELY_TAG],[NSString stringWithFormat:@"%d",ONCHECKCAR_TAG],[NSString stringWithFormat:@"%d",OUTDATECAR_TAG],nil];
     for (int i= 0; i<3; i++) {
         CGFloat buttonX = 0;
@@ -201,7 +204,9 @@
 
 -(void)carSate:(UIButton *)btn
 {
-    
+    CarStateViewController *cvc = [[CarStateViewController alloc] init];
+    cvc.index = btn.tag - ONSALECAR_TAG;
+    [self.navigationController pushViewController:cvc animated:YES];
 }
 
 -(void)myListBtnClick:(UIButton *)btn
@@ -221,7 +226,7 @@
             [self presentViewController:[[LoginViewController alloc] init] animated:YES completion:nil];
             break;
         case DISCOVERCARBYPHONE_TAG:{
-            
+            [self presentViewController:[[DiscorverCarViewController alloc] init] animated:YES completion:nil];
         }
             break;
         case USERFEEDBACK_TAG:{

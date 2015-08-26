@@ -32,4 +32,12 @@ static MineModule *_sharedMineModule;
     }
 }
 
+-(void)initCarStateWithArr:(NSMutableArray *)arr
+{
+    NSMutableArray *nameArr = [[NSMutableArray alloc] initWithObjects:@"在售车",@"未通过",@"已售车",@"未填写",@"审核中",@"已过期", nil];
+    for (NSString *str in nameArr) {
+        [arr addObject:str];
+    }
+}
+
 @end

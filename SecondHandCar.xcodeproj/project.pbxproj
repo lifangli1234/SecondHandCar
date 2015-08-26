@@ -533,6 +533,9 @@
 		406468A91B7F3ECB0092194F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406468A81B7F3ECB0092194F /* RootViewController.m */; };
 		40D1B3F91B8D833400EB913C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D1B3F51B8D833400EB913C /* LoginViewController.m */; };
 		40D1B3FA1B8D833400EB913C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40D1B3F61B8D833400EB913C /* LoginViewController.xib */; };
+		40D1B4071B8D8FE600EB913C /* DiscorverCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D1B4051B8D8FE600EB913C /* DiscorverCarViewController.m */; };
+		40D1B4081B8D8FE600EB913C /* DiscorverCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40D1B4061B8D8FE600EB913C /* DiscorverCarViewController.xib */; };
+		40D1B40B1B8D8FFF00EB913C /* CarStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D1B40A1B8D8FFF00EB913C /* CarStateViewController.m */; };
 		40D1DF211B7C66D200A2C874 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D1DF201B7C66D200A2C874 /* main.m */; };
 		40D1DF241B7C66D200A2C874 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D1DF231B7C66D200A2C874 /* AppDelegate.m */; };
 		40D1DF271B7C66D200A2C874 /* SecondHandCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40D1DF251B7C66D200A2C874 /* SecondHandCar.xcdatamodeld */; };
@@ -1098,6 +1101,11 @@
 		40D1B3F41B8D833400EB913C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		40D1B3F51B8D833400EB913C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		40D1B3F61B8D833400EB913C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		40D1B4041B8D8FE600EB913C /* DiscorverCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscorverCarViewController.h; sourceTree = "<group>"; };
+		40D1B4051B8D8FE600EB913C /* DiscorverCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscorverCarViewController.m; sourceTree = "<group>"; };
+		40D1B4061B8D8FE600EB913C /* DiscorverCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscorverCarViewController.xib; sourceTree = "<group>"; };
+		40D1B4091B8D8FFF00EB913C /* CarStateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarStateViewController.h; sourceTree = "<group>"; };
+		40D1B40A1B8D8FFF00EB913C /* CarStateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarStateViewController.m; sourceTree = "<group>"; };
 		40D1DF1B1B7C66D200A2C874 /* SecondHandCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondHandCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D1DF1F1B7C66D200A2C874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40D1DF201B7C66D200A2C874 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1767,6 +1775,34 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		40D1B4011B8D8FE600EB913C /* MySellCar */ = {
+			isa = PBXGroup;
+			children = (
+				40D1B4021B8D8FE600EB913C /* CarState */,
+				40D1B4031B8D8FE600EB913C /* DiscorverCar */,
+			);
+			path = MySellCar;
+			sourceTree = "<group>";
+		};
+		40D1B4021B8D8FE600EB913C /* CarState */ = {
+			isa = PBXGroup;
+			children = (
+				40D1B4091B8D8FFF00EB913C /* CarStateViewController.h */,
+				40D1B40A1B8D8FFF00EB913C /* CarStateViewController.m */,
+			);
+			path = CarState;
+			sourceTree = "<group>";
+		};
+		40D1B4031B8D8FE600EB913C /* DiscorverCar */ = {
+			isa = PBXGroup;
+			children = (
+				40D1B4041B8D8FE600EB913C /* DiscorverCarViewController.h */,
+				40D1B4051B8D8FE600EB913C /* DiscorverCarViewController.m */,
+				40D1B4061B8D8FE600EB913C /* DiscorverCarViewController.xib */,
+			);
+			path = DiscorverCar;
+			sourceTree = "<group>";
+		};
 		40D1DF121B7C66D200A2C874 = {
 			isa = PBXGroup;
 			children = (
@@ -1860,6 +1896,7 @@
 		40D1DF491B7C746900A2C874 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				40D1B4011B8D8FE600EB913C /* MySellCar */,
 				40D1B3F21B8D833400EB913C /* AccountManager */,
 				406261041B8C177000BD203D /* Cells */,
 				406261051B8C177000BD203D /* MineModule */,
@@ -2439,6 +2476,7 @@
 				406260A21B8C018F00BD203D /* screening_shadow_r.png in Resources */,
 				40625F901B8C018F00BD203D /* detail_native_deposit.png in Resources */,
 				40625F221B8C018F00BD203D /* choosephoto_icon.png in Resources */,
+				40D1B4081B8D8FE600EB913C /* DiscorverCarViewController.xib in Resources */,
 				406260B41B8C018F00BD203D /* set_shuffle_btn.png in Resources */,
 				406260AB1B8C018F00BD203D /* sellcar_cancel_butten.png in Resources */,
 				4062601A1B8C018F00BD203D /* map_narrow_pre.png in Resources */,
@@ -2555,6 +2593,7 @@
 				40FE202B1B818574006FACA9 /* TacticViewController.m in Sources */,
 				4050AA6B1B8AE4D800F427EF /* BuyCarModule.m in Sources */,
 				40D1B3F91B8D833400EB913C /* LoginViewController.m in Sources */,
+				40D1B40B1B8D8FFF00EB913C /* CarStateViewController.m in Sources */,
 				40D1DF241B7C66D200A2C874 /* AppDelegate.m in Sources */,
 				4050AA5F1B8AB8D700F427EF /* Helper.m in Sources */,
 				4050AA641B8AE45D00F427EF /* DrawerViewController.m in Sources */,
@@ -2564,6 +2603,7 @@
 				40FE20281B818561006FACA9 /* ToolViewController.m in Sources */,
 				4062610D1B8C19D000BD203D /* MineModule.m in Sources */,
 				40D1DF211B7C66D200A2C874 /* main.m in Sources */,
+				40D1B4071B8D8FE600EB913C /* DiscorverCarViewController.m in Sources */,
 				404EFCBC1B8417E5009440B5 /* ToolModule.m in Sources */,
 				406261091B8C179400BD203D /* MyInfoCell.m in Sources */,
 				40FE20471B81BA53006FACA9 /* TabBarViewController.m in Sources */,
