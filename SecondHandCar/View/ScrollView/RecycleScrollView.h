@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RecycleScrollView : UIView
+@protocol RecycleScrollViewDelegate;
+
+@interface RecycleScrollView : UIView<UIScrollViewDelegate>
+
+@property (weak, nonatomic) id<RecycleScrollViewDelegate>delegate;
+@property (assign, nonatomic) NSInteger currentPage;
+@property (strong, nonatomic) NSMutableArray *imageArr;
+@property (strong, nonatomic) UIScrollView *scrollView;
+@property (strong, nonatomic) UIPageControl *pageControl;
+
+-(void)shouldAutoShow:(BOOL)shouldStart;
+
+@end
+
+@protocol RecycleScrollViewDelegate <NSObject>
+
+-(void)RecycleScrollView:(RecycleScrollView *)recycleScrollView didClickPageAtIndex:(NSInteger)index;
 
 @end
