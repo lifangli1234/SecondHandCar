@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "RootViewController.h"
+#import "RecycleScrollView.h"
 
-@interface SellCarViewController : RootViewController
+@interface SellCarViewController : RootViewController<RecycleScrollViewDelegate>
 
 @end

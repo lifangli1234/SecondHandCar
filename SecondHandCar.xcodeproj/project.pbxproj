@@ -530,6 +530,7 @@
 		4062610A1B8C179400BD203D /* MyInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 406261081B8C179400BD203D /* MyInfoCell.xib */; };
 		4062610D1B8C19D000BD203D /* MineModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4062610C1B8C19D000BD203D /* MineModule.m */; };
 		4062610F1B8C5EF100BD203D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4062610E1B8C5EF100BD203D /* icon.png */; };
+		406361931B8EB8B4004333A7 /* RecycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 406361921B8EB8B4004333A7 /* RecycleScrollView.m */; };
 		406468A91B7F3ECB0092194F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406468A81B7F3ECB0092194F /* RootViewController.m */; };
 		40D1B3F91B8D833400EB913C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D1B3F51B8D833400EB913C /* LoginViewController.m */; };
 		40D1B3FA1B8D833400EB913C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40D1B3F61B8D833400EB913C /* LoginViewController.xib */; };
@@ -1096,6 +1097,8 @@
 		4062610B1B8C19D000BD203D /* MineModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModule.h; sourceTree = "<group>"; };
 		4062610C1B8C19D000BD203D /* MineModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModule.m; sourceTree = "<group>"; };
 		4062610E1B8C5EF100BD203D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		406361911B8EB8B4004333A7 /* RecycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecycleScrollView.h; sourceTree = "<group>"; };
+		406361921B8EB8B4004333A7 /* RecycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecycleScrollView.m; sourceTree = "<group>"; };
 		406468A71B7F3ECB0092194F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		406468A81B7F3ECB0092194F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		40D1B3F41B8D833400EB913C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -1741,6 +1744,15 @@
 			path = MineModule;
 			sourceTree = "<group>";
 		};
+		406361901B8EB6C3004333A7 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				406361911B8EB8B4004333A7 /* RecycleScrollView.h */,
+				406361921B8EB8B4004333A7 /* RecycleScrollView.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		40D1B3F21B8D833400EB913C /* AccountManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1945,6 +1957,7 @@
 		40D1DF4E1B7C746900A2C874 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				406361901B8EB6C3004333A7 /* ScrollView */,
 				4050AA5B1B8AB8A800F427EF /* Helper */,
 				40FE204B1B81BB57006FACA9 /* CustomButton */,
 				40D1DF4F1B7C746900A2C874 /* MyNavigationBar */,
@@ -2597,6 +2610,7 @@
 				40D1DF241B7C66D200A2C874 /* AppDelegate.m in Sources */,
 				4050AA5F1B8AB8D700F427EF /* Helper.m in Sources */,
 				4050AA641B8AE45D00F427EF /* DrawerViewController.m in Sources */,
+				406361931B8EB8B4004333A7 /* RecycleScrollView.m in Sources */,
 				40D1DF271B7C66D200A2C874 /* SecondHandCar.xcdatamodeld in Sources */,
 				40FE20311B8185A1006FACA9 /* BuyCarViewController.m in Sources */,
 				404EFCB61B841559009440B5 /* ToolCell.m in Sources */,

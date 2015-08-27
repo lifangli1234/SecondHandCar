@@ -22,8 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _titleArr = [[NSMutableArray alloc] init];
-    [[MineModule sharedMineModule] initCarStateWithArr:_titleArr];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,12 +31,19 @@
 
 -(void)initData
 {
+    _titleArr = [[NSMutableArray alloc] init];
+    [[MineModule sharedMineModule] initCarStateWithArr:_titleArr];
     self.titleStr = _titleArr[self.index];
     self.hasLeftTitle = NO;
     self.hasRightTitle = YES;
     self.rightBtnTitle = @"其它";
-    self.leftBtnImageName = @"public_return.png";
+    self.leftBtnImageName = @"navbar_return.png";
     self.rightBtnImageName = nil;
+}
+
+-(void)navigationBarLeftBtnClick:(NavigationBar *)navBar
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

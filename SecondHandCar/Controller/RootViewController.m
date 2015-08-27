@@ -18,9 +18,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    self.navigationController.navigationBarHidden = YES;
-    
     [self initData];
     [self createNavigationBar];
 }

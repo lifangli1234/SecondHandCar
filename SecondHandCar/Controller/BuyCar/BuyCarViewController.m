@@ -27,9 +27,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    self.navigationController.navigationBarHidden = YES;
-    
     [self.view addSubview:[Helper view:CGRectMake(0, 0, [Helper screenWidth], 20) backgroundColor:BLUE]];
     [self createNavigationView];
 }

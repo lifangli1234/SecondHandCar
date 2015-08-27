@@ -27,20 +27,17 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     TabBarViewController *Tab = [[TabBarViewController alloc] init];
-    self.window.rootViewController = Tab;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:Tab];
+    nav.navigationBarHidden = YES;
+    self.window.rootViewController = nav;
     
     MineViewController *mvc = [[MineViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mvc];
     BuyCarViewController *bvc = [[BuyCarViewController alloc] init];
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:bvc];
     SellCarViewController *svc = [[SellCarViewController alloc] init];
-    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:svc];
     ToolViewController *tvc = [[ToolViewController alloc] init];
-    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:tvc];
     TacticViewController *vc = [[TacticViewController alloc] init];
-    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:vc];
     
-    Tab.viewControllers = [NSArray arrayWithObjects:nav1, nav2, nav3, nav4, nav, nil];
+    Tab.viewControllers = [NSArray arrayWithObjects:bvc, svc, tvc, vc, mvc, nil];
     
     return YES;
 }
