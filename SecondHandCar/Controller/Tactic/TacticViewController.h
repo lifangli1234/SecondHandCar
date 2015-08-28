@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "RootViewController.h"
 
-@interface TacticViewController : RootViewController
+@interface TacticViewController : RootViewController<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @end

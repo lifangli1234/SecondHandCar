@@ -38,8 +38,8 @@
         
         self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, _viewHeight-30, _viewWidth, 30)];
         self.pageControl.userInteractionEnabled = NO;
-        self.pageControl.currentPageIndicatorTintColor = [UIColor grayColor];
-        self.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
+        self.pageControl.backgroundColor = [UIColor clearColor];
+        
         [self addSubview:self.pageControl];
         
         _tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap:)];
@@ -100,7 +100,7 @@
     
     _pageControl.currentPage = _currentPage;
     
-    [_scrollView setContentOffset:CGPointMake(_viewWidth, 0) animated:YES];
+    _scrollView.contentOffset = CGPointMake(_viewWidth, 0);
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView

@@ -10,4 +10,14 @@
 
 @interface MyPageControl : UIPageControl
 
+@property (nonatomic, retain) UIImage *imageControlSateNormal;
+@property (nonatomic, retain) UIImage *imageControlSateHilighted;
+-(id)initWithFrame:(CGRect)frame;
+
+@end
+
+@interface MyPageControl(private)
+
+-(void)updateDots;
+
 @end

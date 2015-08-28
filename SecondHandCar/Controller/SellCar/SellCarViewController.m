@@ -52,6 +52,8 @@
         [tempArr addObject:imageView];
     }
     [_recycleScr setImageArr:tempArr];
+    //[_recycleScr.pageControl setImageControlSateNormal:[UIImage imageNamed:@"sale_pictureswitch.png"]];
+    //[_recycleScr.pageControl setImageControlSateHilighted:[UIImage imageNamed:@"sale_pictureswitch_over.png"]];
     
     [self.view addSubview:_recycleScr];
     

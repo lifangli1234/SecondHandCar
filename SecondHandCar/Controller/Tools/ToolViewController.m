@@ -16,7 +16,6 @@
 @implementation ToolViewController
 {
     UITableView *_ToolTableView;
-    NSMutableArray *_contentList;
 }
 
 - (void)viewDidLoad {
@@ -24,10 +23,6 @@
     // Do any additional setup after loading the view.
     
     [self createUI];
-    
-    _contentList = [[NSMutableArray alloc] init];
-    ToolModule *tm = [ToolModule sharedToolModule];
-    [tm initToolContentListWithArr:_contentList];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,14 +65,6 @@
     ToolCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"ToolCell" owner:self options:nil] lastObject];
     cell.delegate = self;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.contentLabel.text = [_contentList[0] objectForKey:@"name"];
-    cell.contentLabel1.text = [_contentList[1] objectForKey:@"name"];
-    cell.contentLabel2.text = [_contentList[2] objectForKey:@"name"];
-    cell.contentLabel3.text = [_contentList[3] objectForKey:@"name"];
-    cell.contentImage.image = [UIImage imageNamed:[_contentList[0] objectForKey:@"image"]];
-    cell.contentImg1.image = [UIImage imageNamed:[_contentList[1] objectForKey:@"image"]];
-    cell.contentImg2.image = [UIImage imageNamed:[_contentList[2] objectForKey:@"image"]];
-    cell.contentImg3.image = [UIImage imageNamed:[_contentList[3] objectForKey:@"image"]];
     return cell;
 }
 

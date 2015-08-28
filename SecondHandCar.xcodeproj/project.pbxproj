@@ -532,6 +532,9 @@
 		4062610F1B8C5EF100BD203D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4062610E1B8C5EF100BD203D /* icon.png */; };
 		406361931B8EB8B4004333A7 /* RecycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 406361921B8EB8B4004333A7 /* RecycleScrollView.m */; };
 		406468A91B7F3ECB0092194F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406468A81B7F3ECB0092194F /* RootViewController.m */; };
+		4071DFDF1B8FF07F003F2405 /* MyPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4071DFDE1B8FF07F003F2405 /* MyPageControl.m */; };
+		4071E0331B905388003F2405 /* TacticCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4071E0311B905388003F2405 /* TacticCell.m */; };
+		4071E0341B905388003F2405 /* TacticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4071E0321B905388003F2405 /* TacticCell.xib */; };
 		40D1B3F91B8D833400EB913C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D1B3F51B8D833400EB913C /* LoginViewController.m */; };
 		40D1B3FA1B8D833400EB913C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40D1B3F61B8D833400EB913C /* LoginViewController.xib */; };
 		40D1B4071B8D8FE600EB913C /* DiscorverCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D1B4051B8D8FE600EB913C /* DiscorverCarViewController.m */; };
@@ -1101,6 +1104,11 @@
 		406361921B8EB8B4004333A7 /* RecycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecycleScrollView.m; sourceTree = "<group>"; };
 		406468A71B7F3ECB0092194F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		406468A81B7F3ECB0092194F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		4071DFDD1B8FF07F003F2405 /* MyPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPageControl.h; sourceTree = "<group>"; };
+		4071DFDE1B8FF07F003F2405 /* MyPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPageControl.m; sourceTree = "<group>"; };
+		4071E0301B905388003F2405 /* TacticCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TacticCell.h; sourceTree = "<group>"; };
+		4071E0311B905388003F2405 /* TacticCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TacticCell.m; sourceTree = "<group>"; };
+		4071E0321B905388003F2405 /* TacticCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacticCell.xib; sourceTree = "<group>"; };
 		40D1B3F41B8D833400EB913C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		40D1B3F51B8D833400EB913C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		40D1B3F61B8D833400EB913C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -1753,6 +1761,16 @@
 			path = ScrollView;
 			sourceTree = "<group>";
 		};
+		4071E02F1B905367003F2405 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4071E0301B905388003F2405 /* TacticCell.h */,
+				4071E0311B905388003F2405 /* TacticCell.m */,
+				4071E0321B905388003F2405 /* TacticCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		40D1B3F21B8D833400EB913C /* AccountManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1930,6 +1948,7 @@
 		40D1DF4B1B7C746900A2C874 /* Tactic */ = {
 			isa = PBXGroup;
 			children = (
+				4071E02F1B905367003F2405 /* Cell */,
 				40FE20291B818574006FACA9 /* TacticViewController.h */,
 				40FE202A1B818574006FACA9 /* TacticViewController.m */,
 			);
@@ -1961,6 +1980,8 @@
 				4050AA5B1B8AB8A800F427EF /* Helper */,
 				40FE204B1B81BB57006FACA9 /* CustomButton */,
 				40D1DF4F1B7C746900A2C874 /* MyNavigationBar */,
+				4071DFDD1B8FF07F003F2405 /* MyPageControl.h */,
+				4071DFDE1B8FF07F003F2405 /* MyPageControl.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2378,6 +2399,7 @@
 				4062604E1B8C018F00BD203D /* personaldetails_nopicture.png in Resources */,
 				40625F7A1B8C018F00BD203D /* coordinate_shoped_top.png in Resources */,
 				4062607C1B8C018F00BD203D /* publish_selcar_sure_bg_h.png in Resources */,
+				4071E0341B905388003F2405 /* TacticCell.xib in Resources */,
 				406260761B8C018F00BD203D /* publish_open_assurance.png in Resources */,
 				40625F761B8C018F00BD203D /* coordinate_shop_bottom.png in Resources */,
 				406260B01B8C018F00BD203D /* send_vin_details.png in Resources */,
@@ -2607,6 +2629,7 @@
 				4050AA6B1B8AE4D800F427EF /* BuyCarModule.m in Sources */,
 				40D1B3F91B8D833400EB913C /* LoginViewController.m in Sources */,
 				40D1B40B1B8D8FFF00EB913C /* CarStateViewController.m in Sources */,
+				4071E0331B905388003F2405 /* TacticCell.m in Sources */,
 				40D1DF241B7C66D200A2C874 /* AppDelegate.m in Sources */,
 				4050AA5F1B8AB8D700F427EF /* Helper.m in Sources */,
 				4050AA641B8AE45D00F427EF /* DrawerViewController.m in Sources */,
@@ -2615,6 +2638,7 @@
 				40FE20311B8185A1006FACA9 /* BuyCarViewController.m in Sources */,
 				404EFCB61B841559009440B5 /* ToolCell.m in Sources */,
 				40FE20281B818561006FACA9 /* ToolViewController.m in Sources */,
+				4071DFDF1B8FF07F003F2405 /* MyPageControl.m in Sources */,
 				4062610D1B8C19D000BD203D /* MineModule.m in Sources */,
 				40D1DF211B7C66D200A2C874 /* main.m in Sources */,
 				40D1B4071B8D8FE600EB913C /* DiscorverCarViewController.m in Sources */,
